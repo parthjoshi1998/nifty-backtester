@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ===========================
+# NIFTY Backtester
+# ===========================
+
+# IntelliJ IDEA
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Generated outputs
+output/charts/
+output/reports/
+output/trades/
+output/optimization/
+
+# Local datasets (optional)
+# Uncomment if you don't want to push historical data
+# datasets/raw/
+# datasets/processed/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.py[cod]

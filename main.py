@@ -1,9 +1,10 @@
-from config import config
-from data import csv_loader
-from indicators import indicator_engine
-from filters import filter_engine
-from strategies import strategy_engine
-from risk import risk_engine
-from engine import backtest_engine
+from config.config import RAW_DATA_DIR
+from data.csv_loader import CSVLoader
 
-print("✅ All imports successful!")
+loader = CSVLoader()
+
+df = loader.load(RAW_DATA_DIR / "nifty_5m.csv")
+
+print(df.head())
+
+print(df.dtypes)
